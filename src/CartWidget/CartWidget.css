@@ -1,0 +1,27 @@
+.CartWidget > a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    margin: 15px;
+    position: relative;
+    opacity: 0.9;
+}
+
+.CartWidget > a:hover {
+    opacity: 1;
+  }
+  
+.CartWidget > a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: all 0.45s;
+}
+  
+.CartWidget > a:hover::before {
+    width: 100%;
+}
